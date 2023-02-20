@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'http://localhost:5000'
+const url = 'https://mern-ecommerce-new.onrender.com'
 
 const email = {
   headers: { 'x-access-user': 'mazba.turza@gmail.com' },
