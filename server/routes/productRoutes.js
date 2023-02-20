@@ -1,9 +1,16 @@
 import express from 'express'
-import { createProduct, getProducts } from '../controllers/productController.js'
+import {
+  createProduct,
+  getProducts,
+  updateCountInStock,
+} from '../controllers/productController.js'
 import { verifyTokenAndAdmin } from '../middleware/authMiddleware.js'
+
 const router = express.Router()
 
-router.route('/').get(getProducts).post(verifyTokenAndAdmin,createProduct)
+// @route /api/products
+router.route('/').get(getProducts).post(verifyTokenAndAdmin, createProduct)
 // router.route('/createDummyProducts').post(createDummyProducts)
+router.route('/updateCountInStock').put(updateCountInStock)
 
 export default router
