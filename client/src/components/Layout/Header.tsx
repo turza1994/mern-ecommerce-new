@@ -24,13 +24,12 @@ function Header() {
     changeBackground()
     // adding the event when scroll change background
     window.addEventListener('scroll', changeBackground)
-    console.log(window.innerWidth)
   })
 
   return (
     <>
       <nav
-        className={`fixed w-full z-10 flex flex-wrap items-center justify-between px-[50px] transition-colors duration-500 ease-in-out ${
+        className={`fixed w-full z-10 flex flex-wrap items-center justify-between px-[25px] sm:px-[50px] transition-colors duration-500 ease-in-out ${
           navbarTransparent ? 'bg-transparent' : 'bg-white'
         }`}
       >

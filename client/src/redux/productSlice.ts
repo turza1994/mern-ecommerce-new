@@ -1,25 +1,25 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
 import * as api from '../api/index'
 
-export interface ProductState {
-  isLoading: boolean
-  products:
-    | [
-        {
-          _id: string
-          title: string
-          message: string
-          creator: string
-          tags: [string]
-          selectedFile: string
-          likeCount: number
-          createdAt: string
-          __v: number
-        }
-      ]
-    | []
-  error: string | null
-}
+// export interface ProductState {
+//   isLoading: boolean
+//   products:
+//     | [
+//         {
+//           _id: string
+//           title: string
+//           message: string
+//           creator: string
+//           tags: [string]
+//           selectedFile: string
+//           likeCount: number
+//           createdAt: string
+//           __v: number
+//         }
+//       ]
+//     | []
+//   error: string | null
+// }
 
 // export const getProducts = createAsyncThunk('product/getProducts', async () => {
 //   let { data } = await api.getProducts()

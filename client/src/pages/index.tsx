@@ -14,9 +14,9 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='font-roboto flex flex-col gap-12'>
+      <main className='font-roboto flex flex-col gap-12 pt-[48.5px] lg:pt-0'>
         <Hero />
-        <div className='flex flex-col gap-8 px-[50px]'>
+        <div className='flex flex-col gap-8 px-[25px] sm:px-[50px]'>
           <Categories />
           <ShopPreview />
         </div>
