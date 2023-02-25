@@ -12,7 +12,7 @@ const ProductCard = ({ product }: any) => {
   }
 
   return (
-    <div className='w-[250px] rounded-md overflow-hidden cursor-pointer transition-transform duration-300 transform-gpu shadow-md relative group'>
+    <div className=' rounded-md overflow-hidden cursor-pointer transition-transform duration-300 transform-gpu shadow-md relative group'>
       <div className='h-72 w-full'>
         <img className='h-full w-full object-cover' src={image} alt={name} />
       </div>

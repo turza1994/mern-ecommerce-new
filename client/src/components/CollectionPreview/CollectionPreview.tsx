@@ -28,12 +28,12 @@ function CollectionPreview({ category }: any) {
           </span>
         </div>
       ) : (
-        <div className='flex flex-col justify-center items-center gap-8'>
+        <div className='flex flex-col gap-8'>
           <h2 className='text-2xl font-medium uppercase hover:text-primary transition-colors duration-300 ease-in-out cursor-pointer'>
             {category.name}
           </h2>
 
-          <div className='flex flex-wrap gap-x-4 sm:gap-x-8 gap-y-8'>
+          <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-4  gap-y-8'>
             {products.data.map((product: any) => (
               <ProductCard key={product._id} product={product} />
             ))}

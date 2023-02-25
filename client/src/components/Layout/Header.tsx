@@ -5,6 +5,7 @@ import { CiSearch } from 'react-icons/ci'
 import { CiShoppingCart } from 'react-icons/ci'
 import { CiTextAlignJustify } from 'react-icons/ci'
 import { CiUser } from 'react-icons/ci'
+import CartBar from '../Cart/CartBar'
 
 function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false)
@@ -131,7 +132,7 @@ function Header() {
             !cartOpen && 'hidden '
           }`}
         >
-          {/* <CartBar /> */}
+          <CartBar />
         </div>
       </nav>
     </>
